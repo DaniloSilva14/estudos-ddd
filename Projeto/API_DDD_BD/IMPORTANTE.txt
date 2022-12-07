@@ -1,0 +1,23 @@
+comandos para rodar no banco como root antes da migrations
+
+- ACESSAR O BANCO COMO ROOT
+user: root
+password: root
+
+- rodar o comando
+CREATE DATABASE IF NOT EXISTS `API_DDD_2022`;
+GRANT ALL ON `API_DDD_2022`.* TO 'user'@'%';
+
+
+
+----------------------------------------
+
+Na api
+
+- Com a api como projeto de inicializacao
+- Com o 3-infra como projeto padrao do Console Gerenciador PM
+
+- Rodar os comandos
+	Add-Migration Inicial_dev_net -Context ContextBase
+	Update-Database
+
